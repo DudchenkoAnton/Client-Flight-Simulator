@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.12)
+project(simulator1)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS  -pthread)
+
+add_executable(simulator1 main.cpp Init.cpp Init.h Expression.h BinaryExpression.h UnaryExpression.h NumberExpression.cpp NumberExpression.h Plus.cpp Plus.h Minus.cpp Minus.h Mul.cpp Mul.h Div.cpp Div.h Negation.cpp Negation.h FactoryExpressionNumeric.cpp FactoryExpressionNumeric.h Less.cpp Less.h Greater.cpp Greater.h OpenServerCommand.cpp OpenServerCommand.h Command.h Parser.cpp Parser.h PrintCommand.cpp PrintCommand.h GreaterEqual.cpp GreaterEqual.h LessEqual.cpp LessEqual.h Equal.cpp Equal.h NotEqual.cpp NotEqual.h ConnectCommand.cpp ConnectCommand.h Lexer.cpp Lexer.h Interpreter.cpp Interpreter.h Command.h ConditionParser.cpp ConditionParser.h IfCommand.cpp IfCommand.h LoopCommand.cpp LoopCommand.h OpenServerCommand.cpp OpenServerCommand.h ConnectCommand.cpp ConnectCommand.h DefineVarCommand.cpp DefineVarCommand.h CommandExpression.cpp CommandExpression.h Parser.cpp Parser.h Expression.h AssignCommand.cpp AssignCommand.h Client.cpp Client.h DataXml.cpp DataXml.h SleepCommand.cpp SleepCommand.h MutexClass.cpp MutexClass.h Server.cpp Server.h RunTimeException.cpp RunTimeException.h)
